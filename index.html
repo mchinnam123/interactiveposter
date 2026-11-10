@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link rel = "stylesheet" href = "style.css">
+
+   
+<!--google font embed-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5+Duo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+
+
+</head>
+
+
+
+<!--the keyframes here are to animate the scrolling of the screen-->
+<style>
+
+
+body {
+   background-image: url(https://i.pinimg.com/736x/13/78/93/1378938bff9574f92ec3ba1b503b75c4.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+  
+}
+
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.block{
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+
+/* graphics on page*/
+.graphicLeft {
+    position: relative;
+    margin-top: -850px;
+    transform: translateY(-1000px);
+    margin-left: -160px;
+}
+
+.graphicRight{
+  position: relative;
+  margin-right: -500px;
+  transform: translateX(1000px);
+}
+
+.graphicTop{
+    position: absolute;
+    transform: translateY(-900px);
+    margin-left: 1040px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a :hover{
+    text-decoration: underline;
+}
+
+</style>
+
+
+<body>
+
+<div class = "glitch-container"> 
+<!--container for "chase atlantic" text-->
+ <h1 class="glitch" aria-label="CHASE">
+  <span aria-hidden="true">c</span><span aria-hidden="true">h</span><span aria-hidden="true">a</span><span aria-hidden="true">s</span><span aria-hidden="true">e</span>
+  <span aria-hidden="true">a</span><span aria-hidden="true">t</span><span aria-hidden="true">l</span><span aria-hidden="true">a</span><span aria-hidden="true">n</span><span aria-hidden="true">t</span><span aria-hidden="true">i</span><span aria-hidden="true">c</span>
+<!--spans in one line, removes spacing-->
+</h1>
+
+</div>
+
+
+ <div class="box-container">
+    <div class="clinton-card">
+        <img src = "CLINTON.JPEG">
+    </div>
+
+    <div class="mitchel-card">
+      <img src = "mitchell.JPEG">
+    </div>
+
+    <div class="christian-card">
+      <img src = "christian.JPEG">
+    </div>
+
+  </div>
+
+<!--img sources for graphics-->
+<img src = "graphictop.png" width = "350" height = "350" class = "graphicTop">
+
+<img src = "graphicLEFT.png" width = "600" height = "900" class = "graphicLeft">
+
+<img src = "binaryside2.png" width = "700" height = "800" class = "graphicRight">
+
+<!--typewriter effects-->
+<div class = "cursor typewriter">
+    <a href = "https://chaseatlantic.com/pages/tour">
+         <p> > lost in heaven tour tickets </p>
+    </a>
+
+</div>
+
+<!--2-->
+<div class = "cursor2 typewriter2">
+     <a href = "https://chaseatlantic.com/collections/all">
+         <p> > merch </p>
+    </a>
+</div>
+
+<!--3-->
+<div class = "cursor3 typewriter3">
+    <a href = "https://portal.chaseatlantic.com/auth">
+         <p> > ready to enter the portal? </p>
+    </a>
+   
+</div>
+
+<button popovertarget = "americapopup">north american leg </button>>
+
+<div id="americapopup" popover>
+    <div class = "content1">
+        <h2>--north america--</h2>
+
+        <p>
+            Irving, TX        
+             <span style = "float: right; color: pink;">10.16</span><br>
+            Houston, TX <br>
+            San Antonio, TX <br>
+            Orlando, FL <br>
+            St. Petersburg, FL <br>
+            Atlanta, GA <br>
+            Nashville, TN <br>
+            Raleigh, NC <br>
+            Washington, D.C. <br>
+            Brooklyn, NY <br>
+            Chicago, IL <br>
+            Minneapolis, MN <br>
+            Denver, CO <br>
+            Salt Lake City, UT <br>
+            Las Vegas, NV <br>
+            Phoenix, AZ <br>
+            Los Angeles, CA <br>
+        </span>
+        </p>
+       
+        </div>
+
+        <button popovertarget="americapopup" popovertargetaction = "hide">close</button>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+   
+
+
+</html>
