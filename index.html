@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tiny5+Duo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
 
+<!--font for popover text-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -26,6 +30,7 @@ body {
    background-size: cover;
    background-repeat: no-repeat;
    background-attachment: fixed;
+   overflow: hidden;
   
 }
 
@@ -47,6 +52,11 @@ body {
 }
 
 
+.container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 15px;
+}
 
 /* graphics on page*/
 .graphicLeft {
@@ -56,13 +66,9 @@ body {
     margin-left: -160px;
 }
 
-.graphicRight{
-  position: relative;
-  margin-right: -500px;
-  transform: translateX(1000px);
-}
 
-.graphicTop{
+
+.graphic1-container{
     position: absolute;
     transform: translateY(-900px);
     margin-left: 1040px;
@@ -109,11 +115,16 @@ a :hover{
   </div>
 
 <!--img sources for graphics-->
+<div class = "graphic1-container">
 <img src = "graphictop.png" width = "350" height = "350" class = "graphicTop">
+</div>
 
 <img src = "graphicLEFT.png" width = "600" height = "900" class = "graphicLeft">
 
-<img src = "binaryside2.png" width = "700" height = "800" class = "graphicRight">
+<img src = "graphicRIGHT.png" width = "700" height = "800" class = "graphicRight">
+
+
+
 
 <!--typewriter effects-->
 <div class = "cursor typewriter">
@@ -125,50 +136,146 @@ a :hover{
 
 <!--2-->
 <div class = "cursor2 typewriter2">
-     <a href = "https://chaseatlantic.com/collections/all">
-         <p> > merch </p>
+     <a href = "https://portal.chaseatlantic.com/auth">
+         <p> > ready to enter the portal? </p>
     </a>
 </div>
 
 <!--3-->
 <div class = "cursor3 typewriter3">
-    <a href = "https://portal.chaseatlantic.com/auth">
-         <p> > ready to enter the portal? </p>
-    </a>
-   
+    <a href = "https://chaseatlantic.com/collections/all">
+         <p> > merch </p>
+    </a>  
 </div>
 
-<button popovertarget = "americapopup">north american leg </button>>
+
+<!--north america leg button+popover-->
+<button popovertarget = "americapopup" style = "text-align: center">._.north american leg._. </button>>
 
 <div id="americapopup" popover>
     <div class = "content1">
-        <h2>--north america--</h2>
-
-        <p>
-            Irving, TX        
-             <span style = "float: right; color: pink;">10.16</span><br>
-            Houston, TX <br>
-            San Antonio, TX <br>
-            Orlando, FL <br>
-            St. Petersburg, FL <br>
-            Atlanta, GA <br>
-            Nashville, TN <br>
-            Raleigh, NC <br>
-            Washington, D.C. <br>
-            Brooklyn, NY <br>
-            Chicago, IL <br>
-            Minneapolis, MN <br>
-            Denver, CO <br>
-            Salt Lake City, UT <br>
-            Las Vegas, NV <br>
-            Phoenix, AZ <br>
-            Los Angeles, CA <br>
-        </span>
+        <h2>._.north america._.</h2>
+            <p>
+            Irving, TX.........     
+             <span style = "float: right; color: rgb(206, 48, 156);">....10.16</span><br>
+            Houston, TX........
+             <span style = "float: right; color: rgb(206, 48, 156);">....10.17</span><br>
+            San Antonio, TX....
+            <span style = "float: right; color: rgb(206, 48, 156);">....10.18</span><br>
+            Orlando, FL........
+            <span style = "float: right; color:rgb(206, 48, 156);">....10.20</span><br>
+            St. Petersburg, FL.
+            <span style = "float: right; color:rgb(206, 48, 156);">....10.21</span><br>
+            Atlanta, GA........
+            <span style = "float: right; color:rgb(206, 48, 156);">....10.23</span><br>
+            Nashville, TN......
+            <span style = "float: right; color:rgb(206, 48, 156);">....10.24</span><br>
+            Raleigh, NC........
+            <span style = "float: right; color:rgb(206, 48, 156);">....10.26</span><br>
+            Washington, D.C.... 
+            <span style = "float: right; color: rgb(206, 48, 156);">....10.27</span><br>
+            Brooklyn, NY....... 
+            <span style = "float: right; color:rgb(206, 48, 156);">....10.28</span><br>
+            Philadelphia, PA...       
+             <span style = "float: right; color: rgb(206, 48, 156);">....10.30</span><br>
+            Boston, MA.........        
+             <span style = "float: right; color: rgb(206, 48, 156);">....11.01</span><br>
+            Montreal, QC.......    
+             <span style = "float: right; color: rgb(206, 48, 156);">....11.03</span><br>
+            Toronto, ON........        
+             <span style = "float: right; color: rgb(206, 48, 156);">....11.05</span><br>
+            Detroit, MI........      
+             <span style = "float: right; color: rgb(206, 48, 156);">....11.06</span><br>
+            Chicago, IL........
+            <span style = "float: right; color:rgb(206, 48, 156);">....11.08</span><br>
+            Minneapolis, MN.... 
+            <span style = "float: right; color:rgb(206, 48, 156);">....11.09</span><br>
+            Denver, CO......... 
+            <span style = "float: right; color: rgb(206, 48, 156);">....11.12</span><br>
+            Salt Lake City, UT.
+            <span style = "float: right; color: rgb(206, 48, 156);">....11.13</span><br>
+            Las Vegas, NV...... 
+            <span style = "float: right; color:rgb(206, 48, 156);">....11.15</span><br>
+            Phoenix, AZ........ 
+            <span style = "float: right; color:rgb(206, 48, 156);">....11.16</span><br>
+            Los Angeles, CA.... 
+            <span style = "float: right; color:rgb(206, 48, 156);">....11.19</span><br>
+            <span style = "float: right; color: rgb(206, 48, 156);">11.20</span>
         </p>
        
         </div>
 
         <button popovertarget="americapopup" popovertargetaction = "hide">close</button>
+    </div>
+</div>
+
+
+<!--australia + nz leg button+popover-->
+<button popovertarget = "oceaniapopup">._.oceania leg._.</button>>
+
+<div id="oceaniapopup" popover>
+    <div class = "content2">
+        <h2>._.oceania._.</h2>
+            <p>
+            Auckland, New Zealand...       
+             <span style = "float: right; color: rgb(206, 48, 156);">....12.07</span><br>
+            Melbourne, Australia.... 
+             <span style = "float: right; color: rgb(206, 48, 156);">....12.11</span><br>
+            Sydney, Australia....... 
+            <span style = "float: right; color: rgb(206, 48, 156);">....12.12</span><br>
+            Brisbane, Australia..... 
+            <span style = "float: right; color:rgb(206, 48, 156);">....12.15</span><br>
+            Adelaide, Australia..... 
+            <span style = "float: right; color:rgb(206, 48, 156);">....12.28</span><br>
+            Perth, Australia........
+            <span style = "float: right; color:rgb(206, 48, 156);">....11.20</span><br>
+        </p>
+       
+        </div>
+
+        <button popovertarget="oceaniapopup" popovertargetaction = "hide">close</button>
+    </div>
+
+</div>
+
+
+<!--europe leg button+popover-->
+<button popovertarget = "europepopup">._.europe leg._. </button>>
+
+<div id="europepopup" popover>
+    <div class = "content3">
+        <h2>._.europe._.</h2>
+            <p>
+            Hamburg, Germany.........    
+             <span style = "float: right; color: rgb(206, 48, 156);">....04.12</span><br>
+            Frederiksberg, Denmark...
+             <span style = "float: right; color: rgb(206, 48, 156);">....04.13</span><br>
+            Prague, Czech Republic... 
+            <span style = "float: right; color: rgb(206, 48, 156);">....04.15</span><br>
+            Lodz, Poland............. 
+            <span style = "float: right; color:rgb(206, 48, 156);">....04.16</span><br>
+            Berlin, Germany.......... 
+            <span style = "float: right; color:rgb(206, 48, 156);">....04.18</span><br>
+            Cologne, Germany.........
+            <span style = "float: right; color:rgb(206, 48, 156);">....04.20</span><br>
+            Paris, France............
+            <span style = "float: right; color:rgb(206, 48, 156);">....04.22</span><br>
+            <span style = "float: right; color:rgb(206, 48, 156);">04.23</span><br>
+            Amsterdam, Netherlands...
+            <span style = "float: right; color:rgb(206, 48, 156);">....04.24</span><br>
+            Brussels, Belgium........
+            <span style = "float: right; color:rgb(206, 48, 156);">....04.26</span><br>
+            Glasgow, Scotland........
+            <span style = "float: right; color:rgb(206, 48, 156);">....04.30</span><br>
+            Manchester, England......
+            <span style = "float: right; color:rgb(206, 48, 156);">....05.02</span><br>
+            London, England..........
+            <span style = "float: right; color:rgb(206, 48, 156);">....05.04</span><br>
+        </p>
+       
+        </div>
+
+        <button popovertarget="europepopup" popovertargetaction = "hide">close</button>
     </div>
 
 
